@@ -1,39 +1,33 @@
 <template>
-	<view>
-		<view>{{items.name1}} 得分：{{item.grade}}</view>
-		<view>{{items.name2}} 得分：{{item.grade1}}</view>	
-		<view>{{items.name3}} 得分：{{item.grade2}}</view>	
-		<view>{{items.name4}} 得分：{{item.grade3}}</view>
-		<view>{{items.name5}} 得分：{{item.grade4}}</view>
-		<view>球队总成绩：{{item.addGrade}}</view>
-		<button type="primary" v-on:click="daying" class="game">查看得分</button>
+	<view v-show="true" v-bind="id">
+		<view>{{items.atlanta.name1}} 得分：{{item.atlanta.grade}}</view>
+		<view>{{items.atlanta.name2}} 得分：{{item.atlanta.grade1}}</view>	
+		<view>{{items.atlanta.name3}} 得分：{{item.atlanta.grade2}}</view>	
+		<view>{{items.atlanta.name4}} 得分：{{item.atlanta.grade3}}</view>
+		<view>{{items.atlanta.name5}} 得分：{{item.atlanta.grade4}}</view>
+		<view>球队总成绩：{{item.atlanta.adding.addGrade}}</view>
+<!-- 				<button type="primary" @click="goBack">返回</button> -->
 	</view>
 </template>
 
 <script>
 	import score from '@/data/grade.js';
+	import competition from '@/data/grame.js';
 	import teamName from '@/data/person.js';
-	import teamNameModel from '@/model/nameModel.js';
-	import getResults from '@/model/index2Model.js';
 	export default {
 		data() {
 			return {
-				item: getResults,
-				items:teamNameModel
+				item: score,
+				items:teamName,
+				id:''
 			};
 		},
 		onLoad() {},
 			components: {
-			score,
-			teamName
 		},
 		methods: {
-			daying: function(res) {
-				debugger;
-				var res=score
-				var result=teamName
-				this.item.bigEagle(res);
-				this.items.boxScore(result);
+			goBack:function(res){
+				console.log("确定传值" + JSON.stringify(res));
 			}
 		}
 	};

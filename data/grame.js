@@ -1,52 +1,52 @@
-{
+const competition={
 	oneGame: {
-		"id": "1",
-		"oneTerm": "1",
-		"twoTerm": "2",
-		"grade": "1:3",
+		"id": 1,
+		"oneTerm": "大老鹰",
+		"twoTerm": "凯尔特人",
+		"grade": "2:1",
 		"win": ""
 	},
 	twoGame: {
 		"id": 1,
-		"oneTerm": "1",
-		"twoTerm": "2",
-		"grade": "1:3",
+		"oneTerm": "黄蜂",
+		"twoTerm": "公牛",
+		"grade": "3:1",
 		"win": ""
 	},
 	threeGame: {
 		"id": 1,
-		"oneTerm": "1",
-		"twoTerm": "2",
+		"oneTerm": "勇士",
+		"twoTerm": "快船",
 		"grade": "1:3",
 		"win": ""
 	},
 	foreGame: {
 		"id": 1,
-		"oneTerm": "1",
-		"twoTerm": "2",
-		"grade": "1:3",
+		"oneTerm": "火箭",
+		"twoTerm": "步行者",
+		"grade": "2:3",
 		"win": ""
 	},
 	fourWin: {
 		oneGame: {
 			"id": "1",
-			"oneTerm": "1",
-			"twoTerm": "3",
+			"oneTerm": "凯尔特人",
+			"twoTerm": "黄蜂",
 			"grade": "1:3",
 			"win": ""
 		},
 		twoGame: {
 			"id": "1",
-			"oneTerm": "5",
-			"twoTerm": "8",
+			"oneTerm": "快船",
+			"twoTerm": "步行者",
 			"grade": "1:3",
 			"win": ""
 		},
 		twoWin: {
 			oneGame: {
 				"id": "1",
-				"oneTerm": "1",
-				"twoTerm": "8",
+				"oneTerm": "黄蜂",
+				"twoTerm": "步行者",
 				"grade": "1:3",
 				"win": ""
 			},
@@ -54,3 +54,5 @@
 		}
 	}
 }
+//导出
+export default competition;

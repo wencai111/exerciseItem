@@ -35,19 +35,19 @@ export default {
 	onLoad() {},
 	components: {},
 	methods: {
-		//查看队伍
-		daying: function(result) {
-			debugger;
-			var result = allTroops;
-			this.item.displayName(result);
-		},
-		//老鹰队
-		eagle: function(result) {
-			uni.navigateTo({ url: '/pages/index/index1' });
-		},
-		celtic: function(result) {
-			uni.navigateTo({ url: '/pages/index/index2' });
-		},
+// 		//查看队伍
+// 		daying: function(result) {
+// 			debugger;
+// 			var result = allTroops;
+// 			this.item.displayName(result);
+// 		},
+// 		//老鹰队
+// 		eagle: function(result) {
+// 			uni.navigateTo({ url: '/pages/index/index1' });
+// 		},
+// 		celtic: function(result) {
+// 			uni.navigateTo({ url: '/pages/index/index2' });
+// 		},
 	}
 };
 </script>
