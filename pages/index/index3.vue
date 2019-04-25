@@ -13,7 +13,7 @@
 					<th><text>VS</text></th>
 				</tr>
 				<tr>
-					<th>{{ item.oneGame.twoTerm }}</th>
+					<th v-on:click="celts">{{ item.oneGame.twoTerm }}</th>
 				</tr>
 				<tr>
 					<th>
@@ -44,7 +44,7 @@
 					<th><text>东部</text></th>
 				</tr>
 				<tr><th><br/></th></tr>
-				<tr><th>{{ item.fourWin.oneGame.oneTerm}}</th></tr>
+				<tr><th v-on:click="celts">{{ item.fourWin.oneGame.oneTerm}}</th></tr>
 				<tr><th><br/></th></tr>
 				<tr><th>VS</th></tr>
 				<tr>
@@ -92,7 +92,7 @@
 <!-- 西部第三场 -->
 			<view class="tableBorderLeft">
 				<tr>
-					<th><text>决赛</text></th>
+					<th><text>西部</text></th>
 				</tr>
 				<tr><th><br/></th></tr>
 				<tr><th><br/></th></tr>
@@ -181,6 +181,11 @@ export default {
 			var res=competition.oneGame.id
 			console.log('res' + JSON.stringify(res))
 			uni.navigateTo({ url: '/pages/index/index1?id='+res});
+		},
+		celts: function(res) {
+			var res=competition.oneGame.id
+			console.log('res' + JSON.stringify(res))
+			uni.navigateTo({ url: '/pages/index/index4?id='+res});
 		},
 	}
 };

@@ -5,8 +5,11 @@
 		<view>{{items.atlanta.name3}} 得分：{{item.atlanta.grade2}}</view>	
 		<view>{{items.atlanta.name4}} 得分：{{item.atlanta.grade3}}</view>
 		<view>{{items.atlanta.name5}} 得分：{{item.atlanta.grade4}}</view>
-		<view>球队总成绩：{{item.atlanta.adding.addGrade}}</view>
-<!-- 				<button type="primary" @click="goBack">返回</button> -->
+		<view>球队总成绩：{{item.atlanta.addGrade}}</view>
+		<hr/>
+		<text>球队赛程</text>
+		<view>VS{{agenda.oneGame.twoTerm}}：{{agenda.oneGame.grade}}</view>
+				<button type="primary" @click="daying">返回</button>
 	</view>
 </template>
 
@@ -14,11 +17,14 @@
 	import score from '@/data/grade.js';
 	import competition from '@/data/grame.js';
 	import teamName from '@/data/person.js';
+	import getResults from '@/model/index2Model.js';
 	export default {
 		data() {
 			return {
+				report:getResults,
 				item: score,
 				items:teamName,
+				agenda:competition,
 				id:''
 			};
 		},
@@ -26,8 +32,10 @@
 			components: {
 		},
 		methods: {
-			goBack:function(res){
-				console.log("确定传值" + JSON.stringify(res));
+		daying: function() {
+				debugger;
+				var res=getResults
+				this.report.bigEagle(res);
 			}
 		}
 	};

@@ -8,7 +8,7 @@
 		{
 			"path": "pages/index/index1",
 			"style": {
-				"navigationBarTitleText": "NBA得分"
+				"navigationBarTitleText": "大老鹰球队"
 			}
 		},
 		{
@@ -21,6 +21,12 @@
 			"path": "pages/index/index3",
 			"style": {
 				"navigationBarTitleText": "NBA得分"
+			}
+		},
+		{
+			"path": "pages/index/index4",
+			"style": {
+				"navigationBarTitleText": "凯尔球队"
 			}
 		}
 	],

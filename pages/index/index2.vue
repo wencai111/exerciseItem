@@ -6,7 +6,6 @@
 		<view>{{items.name4}} 得分：{{item.grade3}}</view>
 		<view>{{items.name5}} 得分：{{item.grade4}}</view>
 		<view>球队总成绩：{{item.addGrade}}</view>
-		<button type="primary" v-on:click="daying" class="game">查看得分</button>
 	</view>
 </template>
 
@@ -28,13 +27,6 @@
 			teamName
 		},
 		methods: {
-			daying: function(res) {
-				debugger;
-				var res=score
-				var result=BostonName
-				this.item.bigEagle(res);
-				this.items.boxScore(result);
-			}
 		}
 	};
 </script>

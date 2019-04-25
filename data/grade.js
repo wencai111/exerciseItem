@@ -8,9 +8,9 @@ const score={
 		grade3:"30",
 		grade4:"50",
 	    addGrade:"",
-		adding:function() {
-			this.addGrade= Number(grade)+ Number(grade1) + Number(grade2) + Number(grade3) + Number(grade4);;
-		}
+// 		adding:function() {
+// 			this.addGrade= Number(grade)+ Number(grade1) + Number(grade2) + Number(grade3) + Number(grade4);
+// 		}
 	},
 	//波士顿 凯尔特人
 	boston:{
