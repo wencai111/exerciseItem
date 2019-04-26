@@ -8,7 +8,7 @@
 		<view>球队总成绩：{{item.boston.addGrade}}</view>
 		<hr/>
 		<text>球队赛程</text>
-		<view>VS{{agenda.oneGame.oneTerm}}：{{agenda.oneGame.grade}}</view>
+		<view>{{agenda.oneGame.twoTerm}}VS{{agenda.oneGame.oneTerm}}：{{agenda.oneGame.againstGrade}}</view>
 	</view>
 </template>
 

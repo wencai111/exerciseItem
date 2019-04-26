@@ -4,6 +4,7 @@ const competition={
 		"oneTerm": "大老鹰",
 		"twoTerm": "凯尔特人",
 		"grade": "2:1",
+		"againstGrade":"1:2", 
 		"win": ""
 	},
 	twoGame: {

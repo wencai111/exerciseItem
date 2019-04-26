@@ -8,8 +8,7 @@
 		<view>球队总成绩：{{item.atlanta.addGrade}}</view>
 		<hr/>
 		<text>球队赛程</text>
-		<view>VS{{agenda.oneGame.twoTerm}}：{{agenda.oneGame.grade}}</view>
-				<button type="primary" @click="daying">返回</button>
+		<view>{{agenda.oneGame.oneTerm}}VS{{agenda.oneGame.twoTerm}}：{{agenda.oneGame.againstGrade}}</view>
 	</view>
 </template>
 

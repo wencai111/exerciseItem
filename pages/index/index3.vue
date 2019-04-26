@@ -24,7 +24,7 @@
 					<th><text></text></th>
 				</tr>
 				<tr>
-					<th>{{ item.twoGame.oneTerm }}</th>
+					<th v-on:click="wasp">{{ item.twoGame.oneTerm }}</th>
 				</tr>
 				<tr>
 					<th><text>VS</text></th>
@@ -51,7 +51,7 @@
 					<th><text></text></th>
 				</tr>
 				<tr><th><br/></th></tr>
-				<tr><th>{{ item.fourWin.oneGame.twoTerm}}</th></tr>
+				<tr><th v-on:click="wasp">{{ item.fourWin.oneGame.twoTerm}}</th></tr>
 				<tr><th>比分:{{ item.fourWin.oneGame.grade}}</th></tr>
 				<tr><th><br/></th></tr>
 			</view>
@@ -63,7 +63,7 @@
 				<tr><th><br/></th></tr>
 				<tr><th><br/></th></tr>
 				<tr><th><br/></th></tr>
-				<tr><th>{{ item.fourWin.twoWin.oneGame.oneTerm}}</th></tr>
+				<tr><th v-on:click="wasp">{{ item.fourWin.twoWin.oneGame.oneTerm}}</th></tr>
 				<tr>
 					<th><text></text></th>
 				</tr>
@@ -187,6 +187,11 @@ export default {
 			console.log('res' + JSON.stringify(res))
 			uni.navigateTo({ url: '/pages/index/index4?id='+res});
 		},
+			wasp: function(res) {
+			var res=competition.oneGame.id
+			console.log('res' + JSON.stringify(res))
+			uni.navigateTo({ url: '/pages/index/index5?id='+res});
+		}
 	}
 };
 </script>
